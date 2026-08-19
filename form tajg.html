@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" autocomplete="off">
+       
+        <div> 
+            <label>First name: </label>
+        <input type="text" name="firstName" autofocus method="post">
+    </div>
+<div>
+      <label>Last name: </label>
+        <input type="text" name="firstName" placeholder="Enter name">
+
+</div>
+<label for="">Email</label>
+<input type="email" id="username" name="userName" required>
+
+<br>
+<input type="text" name="area" value="alex" disabled>
+<input type="text" name="shippingarea" value="alex" readonly>
+<div>
+    <label for="">Gender</label>
+    <input type="radio" name="gender" value="female"><label>Female</label>
+    <input type="radio" name="gender" name="male"><label>Male</label>
+</div>
+
+<div>
+    <label for="">sourses</label>
+    <input type="checkbox" name="courses[]" vakue="html"><label>HTML</label>
+    <input type="checkbox" name="courses[]" value="css"><label>css</label>
+    <input type="checkbox" name="courses[]" value="js"><label>js</label>
+    <input type="checkbox" name="courses[]" value="sql"><label>sql</label>
+
+    <label for="">Age</label>
+    <input type="number" name="userage" min="5" max="12">
+</div>
+<div>
+    <label for=""></label>
+    <select name="track" id="">
+        <option value="0" disabled>please select your track</option>
+        <option value="1">frontend</option>
+        <option value="2">backyend</option>
+        <option value="3">end</option>
+        <option value="4">anything</option>
+        <input type="file" name="userFile" placeholde="choose folder" multiple>
+        <!--ازاي اخلي الفايل صور بس من نوعpng-->
+
+    </select>
+ 
+</div>
+<input type="text" pattern="[A-Z a-z]{3,7}" title="only uppercase letters">
+<br>
+<input type="text" pattern="[A-Z a-z]+{3,7}" title="only uppercase letters">
+ <br>
+<input type="text" pattern="[0,9]+" title="enter only numbers">
+ <br>
+<input type="url" name="link" id="website" pattern="https?://.+" title="include http://">
+
+
+<input type="date" name="userdate" >
+<input type="datetime-local">
+<input type="month">
+
+<div>
+
+    <input type="color">
+    <input type="range" name="range" min="200" max="400" value="200">
+
+    <label for="userid">ID</label>
+    <input type="text" id="userid">
+   </div>
+   <div>
+    <textarea name="" id="" placeholder="enter your comment" cols="12" rows="12"></textarea> 
+   </div>
+
+   <input type="reset" value="clear data">
+   <button type="reset">Clear data</button>
+    </form>
+<!--input type =text
+mobile-->
+<!--input 11 number,start witj012/011/010/015-->
+<!--feildset legend search -->
+<div>
+<label for="file-upload">اختر صورة PNG فقط:</label>
+    <input type="file" id="file-upload" name="user_image" accept=".png, image/png">
+</div>
+ <label for="number">Enter your number</label>
+ <input type="text" id="number" name="userNumber" pattern="[0,11] "titel="only 11 numbers" start="011,012,010,015" >
+</div>
+
+
+<fieldset>
+    <legend>بيانات الحساب</legend>
+    
+    <label for="username">اسم المستخدم:</label>
+    <input type="text" id="username" name="username"><br><br>
+    
+    <label for="pass">كلمة السر:</label>
+    <input type="password" id="pass" name="pass" required>
+  </fieldset>
+
+
+  <form action="/search">
+  <label for="site-search">serach</label>
+  <input type="search" id="site-search" name="q" placeholder="search">
+  <button type="submit">بحث</button>
+</form>
+
+   <input type="submit">
+   <input type="submit" value="login">
+   <button>Register</button>
+
+
+   <div>
+</body>
+</html>
